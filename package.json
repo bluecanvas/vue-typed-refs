@@ -1,0 +1,52 @@
+{
+  "name": "vue-typed-refs",
+  "version": "1.0.0",
+  "private": false,
+  "description": "TypeScript utility type for Vue.js $refs",
+  "keywords": [
+    "typescript",
+    "types",
+    "refs",
+    "vue"
+  ],
+  "homepage": "https://github.com/bluecanvas/vue-typed-refs#readme",
+  "bugs": {
+    "url": "https://github.com/bluecanvas/vue-typed-refs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluecanvas/vue-typed-refs.git"
+  },
+  "license": "MIT",
+  "author": "Blue Canvas <team@bluecanvas.io>",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf .dist/* && tsc ./src/index.ts --outDir ./dist --declaration",
+    "fmt:prettier": "prettier --write ./**/*.{js,ts}",
+    "lint": "npm run lint:prettier && npm run lint:editorconfig",
+    "lint:editorconfig": "editorconfig-checker -config ./editorconfig -exclude \"node_modules|dist|.DS_Store|.git\"",
+    "lint:prettier": "prettier --check ./**/*.{js,ts}",
+    "prepare": "npm run build",
+    "test": "tsc ./test/index.ts --noEmit"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
+    "editorconfig-checker": "^3.1.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.7",
+    "vue": "^2.6.11"
+  },
+  "peerDependencies": {
+    "typescript": ">=3.x",
+    "vue": ">=2.x"
+  }
+}
