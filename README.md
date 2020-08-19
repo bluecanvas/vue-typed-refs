@@ -7,13 +7,13 @@
 ### Via NPM
 
 ```bash
-$ npm i @bluecanvas/vue-typed-refs -D
+$ npm i vue-typed-refs -D
 ```
 
 ### Via Yarn
 
 ```bash
-$ yarn add @bluecanvas/vue-typed-refs --dev
+$ yarn add vue-typed-refs --dev
 ```
 
 ### Usage

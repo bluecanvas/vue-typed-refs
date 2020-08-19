@@ -1,5 +1,5 @@
 {
-  "name": "@bluecanvas/vue-typed-refs",
+  "name": "vue-typed-refs",
   "version": "1.0.0",
   "private": false,
   "description": "TypeScript utility type for Vue.js $refs",
