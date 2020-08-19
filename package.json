@@ -4,9 +4,9 @@
   "private": false,
   "description": "TypeScript utility type for Vue.js $refs",
   "keywords": [
-    "typescript",
-    "types",
     "refs",
+    "types",
+    "typescript",
     "vue"
   ],
   "homepage": "https://github.com/bluecanvas/vue-typed-refs#readme",
@@ -29,12 +29,12 @@
       "email": "andrew.d.vasilchuk@gmail.com"
     }
   ],
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "files": [
     "src",
     "dist"
   ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rimraf .dist/* && tsc ./src/index.ts --outDir ./dist --declaration",
     "fmt:prettier": "prettier --write ./**/*.{js,ts}",
