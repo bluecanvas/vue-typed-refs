@@ -30,7 +30,7 @@ $ yarn add vue-typed-refs --dev
 ```ts
 import Vue from 'vue'
 import { WithRefs } from 'vue-typed-refs'
-import YourAwesomeComponent from 'path/to/your/awewsome/component'
+import YourAwesomeComponent from 'path/to/your/awesome/component'
 
 type Refs = {
   input: HTMLInputElement
