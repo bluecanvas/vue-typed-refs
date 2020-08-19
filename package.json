@@ -19,6 +19,16 @@
   },
   "license": "MIT",
   "author": "Blue Canvas <team@bluecanvas.io>",
+  "contributors": [
+    {
+      "name": "Alex Brausewetter",
+      "email": "alex@xoob.de"
+    },
+    {
+      "name": "Andrew Vasylchuk",
+      "email": "andrew.d.vasilchuk@gmail.com"
+    }
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
