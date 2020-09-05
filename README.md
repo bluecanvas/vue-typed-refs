@@ -30,6 +30,7 @@ $ yarn add vue-typed-refs --dev
 ```ts
 import Vue from 'vue'
 import { WithRefs } from 'vue-typed-refs'
+// import type { WithRefs } from 'vue-typed-refs' TypeScript 3.8+
 import YourAwesomeComponent from 'path/to/your/awesome/component'
 
 type Refs = {
