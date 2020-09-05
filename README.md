@@ -77,6 +77,28 @@ export default (YourAwesomeExtendedComponent as WithRefs<
 
 </details>
 
+## Motivation
+
+If your project is written using TypeScript + Vue.js, likely your code contains a lot of `as` casting: `(this.$refs.input as HTMLInputElement).focus()` when deailing with `$refs`.
+
+The most desperate ones even create a helper to access `$refs` doing `as` casting only once:
+
+```ts
+{
+  // ...
+  methods: {
+    getInput() {
+      return this.$refs.input as HTMLInputElement
+    }
+  }
+  // ...
+}
+```
+
+The library provides a convenient way to declare type of you `$refs` per component scope.
+
+The idea was adopted from [vue-class-component](https://class-component.vuejs.org/guide/refs-type-extension.html).
+
 ## Tests
 
 ```bash
