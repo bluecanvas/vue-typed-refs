@@ -36,6 +36,7 @@ import YourAwesomeComponent from 'path/to/your/awesome/component'
 type Refs = {
   input: HTMLInputElement
   component: InstanceType<typeof YourAwesomeComponent>
+  underVIfElement?: HTMLDivElement
 }
 
 export default (Vue as WithRefs<Refs>).extend({
@@ -44,6 +45,7 @@ export default (Vue as WithRefs<Refs>).extend({
     foo() {
       this.$refs.input // HTMLInputElement
       this.$refs.component // InstanceType<typeof YourAwesomeComponent>
+      this.$refs.underVIfElement // HTMLDivElement | undefined
     },
   },
 })
