@@ -23,6 +23,7 @@ $ yarn add vue-typed-refs --dev
   <div>
     <input ref="input" />
     <your-awesome-component ref="component"></your-awesome-component>
+    <div v-if="condition" ref="underVIfElement"></div>
   </div>
 </template>
 ```
